@@ -9,7 +9,7 @@ console.log(displayContainer.text())
 //jQuery adding to the DOM
 $("#song-list").html(`
     <li>
-        Michael Tambornino AND...
+        Good Song AND...
     </li>
 `)
 
@@ -22,9 +22,13 @@ load_songs_button.click(function (evt) {
 
     //  when the button is clicked; add hard coded info onto the DOM
     $(`
-    <li>
-        ANOTHER Michael Tambornino
-    </li>
+
+                <li class="song" id="next-song">
+                    <h1 class="song__title">{Title of song}</h1>
+                    <section class="song__description">
+                        Performed by {artist} on the album {album}
+                    </section>
+                </li>
     `)
     .appendTo("#song-list")
 
@@ -32,6 +36,6 @@ load_songs_button.click(function (evt) {
     //use $.ajax() to load `songs.json` from the file system
     // $("#song-list")
     // .load("songs.json #target li")
-    // .then
+
 
 })
