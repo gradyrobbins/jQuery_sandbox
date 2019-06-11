@@ -8,9 +8,9 @@ console.log(displayContainer.text())
 
 //jQuery adding to the DOM
 $("#song-list").html(`
-    <div>
+    <li>
         Michael Tambornino AND...
-    </div>
+    </li>
 `)
 
 //jQuery create Event Handlers
@@ -21,14 +21,17 @@ load_songs_button.click(function (evt) {
     // console.log(evt.target.id)
 
     //  when the button is clicked; add hard coded info onto the DOM
-    $("#song-list").html(`
-    <div>
+    $(`
+    <li>
         ANOTHER Michael Tambornino
-    </div>
+    </li>
     `)
+    .appendTo("#song-list")
 
     //AJAX: Asynchronous JS and XML
     //use $.ajax() to load `songs.json` from the file system
-    $("#song-list").load("songs.json")
+    // $("#song-list")
+    // .load("songs.json #target li")
+    // .then
 
 })
