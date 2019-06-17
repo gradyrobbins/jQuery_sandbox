@@ -15,11 +15,20 @@ header {
     margin-bottom: 10px;
 }
 #display-container {
-    /* background-color: burlywood; */
+
     width: 90%;
     border: 1px solid black;
     padding: 10px;
     margin: auto;
 };
 
+ol#song-list li:even {
+    background-color: lightskyblue
+}
 
+.custom {
+    width: 90%;
+    border: 5px solid blue;
+    padding: 10px;
+    margin: auto;
+}

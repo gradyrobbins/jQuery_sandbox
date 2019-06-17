@@ -7,11 +7,11 @@ const displayContainer = $("#display-container")
 console.log(displayContainer.text())
 
 //jQuery adding to the DOM
-$("#song-list").html(`
-    <li>
-        Good Song AND...
-    </li>
-`)
+    // $("#song-list").html(`
+    //     <li>
+    //         Good Song AND...
+    //     </li>
+    // `)
 
 //jQuery create Event Handlers
 const load_songs_button = $("#load-songs")
@@ -38,4 +38,46 @@ load_songs_button.click(function (evt) {
     // .load("songs.json #target li")
 
 
+})
+
+$(document).ready(function(){
+    // $('#btn1').click(function (){
+    //     alert('button 1 clicked')
+    // })
+    $('#btn1').on('click', function(){
+        $('.para1').toggle()
+    })
+    $('#btn2').on('click', function(){
+        alert('button 2 clicked')
+    })
+    $(document).on('mousemove', function(e){
+        $('#coords').html('coords : ' + 'Y : ' + e.clientY + ' X : ' + e.clientX)
+    })
+    $('input').focus(function(){
+        $(this).css('background-color', 'yellow')
+    })
+    $('input').blur(function(){
+        $(this).css('background-color', 'white')
+    })
+    $('input').keyup(function(e){
+        console.log(e.target.value)
+    })
+    $('select').change(function(e){
+        console.log(e.target.value)
+    })
+    $('form').submit(function(e){
+        e.preventDefault();
+        var name = $('input#name').val();
+        console.log("name :"  + name)
+    })
+
+    $('#paragraph5').css({background: "gray", color: "red"})
+
+    $('#btn5').click(function(){
+        $('#paragraph6').toggleClass("custom")
+    })
+
+    $('#empty').click(function(){
+        $('#song-list').empty()
+    })
 })

@@ -2,24 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>jQuery Sandbox</title>
+  <title>jQuery Sandbox </title>
   <link rel="stylesheet" href="./styles.css">
 
 </head>
 
-<body>
-    <header>
-      <h1>jQuery Sandbox</h1>
-    </header>
-    <div id="display-container">Display Container </div>
-  <hr/>
-    <button id="load-songs">Load Songs</button>
-  <hr/>
-    <ol id="song-list">
-      <li id="next-song">test</li>
-    </ol>
-  <hr/>
+<header>
+  <h1>jQuery Sandbox</h1>
+  <h3>Selectors</h3>
+  <h3>Events</h3>
+  <h3>Dom manipulation</h3>
+</header>
 
+<body>
+  <div id="events">
+    <h3>mouse events</h3>
+    <button id="btn1">toggle hide/show</button>
+    <button id="btn2">alert</button>
+    <p class="para1">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+    <h2 id="coords"></h2>
+  </div>
+  <hr/>
+    <h3>Forms</h3>
+    <form id="form">
+      <label>Name</label>
+      <br/>
+      <input type="text" id="name" name="name">
+      <br/>
+      <label>Email</label>
+      <br/>
+      <input type="email" id="email">
+      <br/>
+      <label>Gender</label>
+      <br/>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  <hr/>
+    <h3>AJAX | DOM manipulation</h3>
+    <button id="btn5">Button</button>
+    <p id="paragraph5">This is a paragraph</p>
+    <p id="paragraph6">This is another paragraph</p>
+    <div id="myDiv"></div>
+
+    <hr/>
+
+    <div id="display-container">Load Songs
+      <button id="load-songs">click to load</button>
+      <button id="empty">clear this list</button>
+
+      <ol id="song-list"></ol>
+    </div>
+
+  <hr/>
 
   <!-- import jQuery CDN -->
   <script
