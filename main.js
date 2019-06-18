@@ -144,4 +144,17 @@ $(document).ready(function(){
         box.animate({left: 0, top: 0
         })
     })
+    // $('#result').load('test.html', function(responseTxt, statusTxt, xhr){
+    //     if(statusTxt == "success"){alert(
+    //         "yes"
+    //     )}else if(statusTxt =="error"){alert("error : " + xhr.responseTxt)}
+    // });
+    // $.get('test.html', function(data){
+    //     $('$result').html(data)
+    // })
+    $.getJSON('songs.json', function(data){
+        $.each(data, function(i, user){
+            $('ul#users').append('<li>' + user.artist +'</li>')
+        })
+    })
 })
