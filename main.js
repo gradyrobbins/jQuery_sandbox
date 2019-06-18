@@ -22,12 +22,15 @@ load_songs_button.click(function (evt) {
     // console.log(evt.target.id)
     //all of the below is pg 481 of JavaScript/JQuery the missing manual by D. MacFarland
     $.getJSON('songs.json',  processContacts);
+
         function processContacts(data){
             // var infoHTML= '';
-            console.log(data.songs[0].title)
-            console.log(data.songs[1].title)
-            console.log(data.songs[2].title)
-            console.log(data.songs[3].title)
+            console.log("data: " + data.songs)
+            console.log(data.songs[0].title, data.songs[0].artist)
+            console.log(data.songs[1].title, data.songs[1].artist)
+            console.log(data.songs[2].title, data.songs[2].artist)
+            console.log(data.songs[3].title, data.songs[3].artist)
+
 
             // $.each(data, function(data) {
             //     console.log(`song :` + `${data}`)
