@@ -20,16 +20,24 @@ const load_songs_button = $("#load-songs")
 // Attach a click handler to the load-songs-button with jQuery.
 load_songs_button.click(function (evt) {
     // console.log(evt.target.id)
-    //all of the below is pg 481 of JavaScript/JQuery the missing manual by D. MacFarland
-    $.getJSON('songs.json',  processContacts);
+    $.getJSON('songs.json', function(data){
+        $.each(data, function(i, song){
+            $('ol#song-list').append('<li>' + song.artist +'</li>')
+        })
+    })
 
-        function processContacts(data){
-            // var infoHTML= '';
-            console.log("data: " + data.songs)
-            console.log(data.songs[0].title, data.songs[0].artist)
-            console.log(data.songs[1].title, data.songs[1].artist)
-            console.log(data.songs[2].title, data.songs[2].artist)
-            console.log(data.songs[3].title, data.songs[3].artist)
+
+
+    //all of the below is pg 481 of JavaScript/JQuery the missing manual by D. MacFarland
+    // $.getJSON('songs.json',  processContacts);
+
+    //     function processContacts(data){
+    //         // var infoHTML= '';
+    //         console.log("data: " + data.songs)
+    //         console.log(data.songs[0].title, data.songs[0].artist)
+    //         console.log(data.songs[1].title, data.songs[1].artist)
+    //         console.log(data.songs[2].title, data.songs[2].artist)
+    //         console.log(data.songs[3].title, data.songs[3].artist)
 
 
             // $.each(data, function(data) {
@@ -42,7 +50,7 @@ load_songs_button.click(function (evt) {
             // })
             // .appendTo("#song-list");
 
-    }
+    //}
     //  when the button is clicked; add hard coded info onto the DOM
         // $(`
 
@@ -152,9 +160,10 @@ $(document).ready(function(){
     // $.get('test.html', function(data){
     //     $('$result').html(data)
     // })
-    $.getJSON('songs.json', function(data){
-        $.each(data, function(i, user){
-            $('ul#users').append('<li>' + user.artist +'</li>')
-        })
-    })
+    // $.getJSON('songs.json', function(data){
+    //     $.each(data, function(i, song){
+    //         $('ol#song-list').append('<li>' + song.artist +'</li>')
+    //     })
+    // })
+
 })
