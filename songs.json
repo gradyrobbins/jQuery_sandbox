@@ -1,5 +1,4 @@
-{
-    "songs": [
+[
       {
         "title": "The Walk",
         "artist": "Mayer Hawthorne",
@@ -21,4 +20,4 @@
         "album": "Eliminator"
       }
     ]
-  }
+  
