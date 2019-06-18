@@ -1,3 +1,13 @@
+code along with traversy media's jQuery tutorial.
+1.  Intro & selectors
+2.  Events
+3.  DOM Manipulation
+4.  Effects & animation
+   * Fade in/out
+   * Slide in/out
+   * Animate function
+5.  AJAX
+
 # jQuery
 
 [jQuery](https://jquery.com/) is, arguably, the most popular JavaScript library ever created. You will find it in use everywhere on the Web, because it was the first tool written to allow developers to write interactive JavaScript code that would work across all browsers. Before jQuery came along, development teams had to spend hours upon hours of time during a project to ensure that their code worked in Internet Explorer, Chrome, Firefox, and Safari.
@@ -77,8 +87,8 @@ sourceComponent.click(function (evt) {
 ## Videos
 
 1. [jQuery Crash Course: Intro & Selectors](https://www.youtube.com/watch?v=3nrLc_JOF7k)
-1. [jQuery Events](https://www.youtube.com/watch?v=VlWsJHsVb-E)
-1. [jQuery AJAX](https://www.youtube.com/watch?v=Wl-VvvNCk2A)
+2. [jQuery Events](https://www.youtube.com/watch?v=VlWsJHsVb-E)
+3. [jQuery AJAX](https://www.youtube.com/watch?v=Wl-VvvNCk2A)
 
 ## Practice - The Song List
 

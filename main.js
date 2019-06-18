@@ -103,5 +103,45 @@ $(document).ready(function(){
     $('#empty').click(function(){
         $('#song-list').empty()
     })
+    $('#btnFadeOut').click(function(){
+        $('#box').fadeOut(2000, function(){
+            $('#btnFadeOut').text('its gone')
+        })
+    })
+    $('#btnFadeIn').click(function(){
+        $('#box').fadeIn()
+    })
+    $('#btnSlideUp').click(function(){
+        $('#box').slideUp()
+    })
+    $('#btnSlideDown').click(function(){
+        $('#box').slideDown()
+    })
+    $('#btnSlideTog').click(function(){
+        $('#box').slideToggle()
+    })
 
+    $('#btnMoveRight').click(function(){
+        $('#box2').animate({left: 500,
+                            height: '400px',
+                            width: '400px',
+                            opacity: 0.9})
+    })
+    $('#btnMoveLeft').click(function(){
+        $('#box2').animate({left: 0,
+                            height: '200px',
+                            width: '200px',
+                            opacity: '0.5'})
+    })
+    $('#btnMoveAround').click(function(){
+        let box = $('#box2')
+        box.animate({left: 300,
+        })
+        box.animate({top: 300,
+        })
+        box.animate({left: 0, top: 300
+        })
+        box.animate({left: 0, top: 0
+        })
+    })
 })
