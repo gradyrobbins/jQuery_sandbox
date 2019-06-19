@@ -92,6 +92,7 @@ $("#studentInfo").html(`
 ```
 
 ##  Effects & animation
+  * [jQuery Effects and Animation](https://www.youtube.com/watch?v=kVc_XfZY0vI)
    * Fade in/out
    * Slide in/out
    * Animate function
