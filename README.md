@@ -1,3 +1,4 @@
+# this repository combines the NSS jQuery supplemental chapter and traversy media's youTube tutorial on jQuery.
 
 # jQuery
 
@@ -9,19 +10,13 @@ Most any application that wasn't built in the last 6 months is pretty much guara
 
 Even though the JavaScript that you've been using so far does most of what jQuery was useful for, we need to show you the syntax, and have you practice it, so that you will know what you're looking at when you get a job and have to work on a JavaScript application.
 
-## this project is a tandem repo combining the NSS jQuery supplemental chapter and a code along with traversy media's youTube tutorial on jQuery.
-
-
-  ## Videos
-
-  1. [jQuery Crash Course: Intro & Selectors](https://www.youtube.com/watch?v=3nrLc_JOF7k)
-  2. [jQuery Events](https://www.youtube.com/watch?v=VlWsJHsVb-E)
-  3. [jQuery AJAX](https://www.youtube.com/watch?v=Wl-VvvNCk2A)
 
 
 
-1.  Intro & selectors
-## Selecting Elements
+
+
+### Selecting Elements
+  * [jQuery Crash Course: Intro & Selectors](https://www.youtube.com/watch?v=3nrLc_JOF7k)
 
 The vanilla way.
 
@@ -43,9 +38,11 @@ const sourceComponent = $("#fishgut")
 console.log(sourceComponent.text())
 ```
 
-1.  Events
+
+
 
 ## Creating Event Handlers
+  * [jQuery Events](https://www.youtube.com/watch?v=VlWsJHsVb-E)
 
 The vanilla way.
 
@@ -66,7 +63,11 @@ sourceComponent.click(function (evt) {
     console.log(evt.target.id)
 })
 ```
-4.  DOM Manipulation
+
+
+
+
+
 
 ## Adding to the DOM
 
@@ -90,11 +91,15 @@ $("#studentInfo").html(`
 `)
 ```
 
-4.  Effects & animation
+##  Effects & animation
    * Fade in/out
    * Slide in/out
    * Animate function
-4.  AJAX
+
+##  AJAX
+
+  * [jQuery AJAX](https://www.youtube.com/watch?v=Wl-VvvNCk2A)
+
 
 
 
