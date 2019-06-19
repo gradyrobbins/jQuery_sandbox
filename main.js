@@ -19,7 +19,8 @@ const load_songs_button = $("#load-songs")
 
 // Attach a click handler to the load-songs-button with jQuery.
 load_songs_button.click(function (evt) {
-    // console.log(evt.target.id)
+    console.log(evt.target.id)
+    $('ol#song-list').html(" ")
     $.getJSON('songs.json', function(data){
         $.each(data, function(i, song){
             $('ol#song-list').append('<li>' + song.artist +'</li>')
@@ -152,11 +153,11 @@ $(document).ready(function(){
         box.animate({left: 0, top: 0
         })
     })
-    // $('#result').load('test.html', function(responseTxt, statusTxt, xhr){
-    //     if(statusTxt == "success"){alert(
-    //         "yes"
-    //     )}else if(statusTxt =="error"){alert("error : " + xhr.responseTxt)}
-    // });
+    $('#result').load('test.html', function(responseTxt, statusTxt, xhr){
+        if(statusTxt == "success"){console.log(
+            "test.html properly loaded via AJAX call "
+        )}else if(statusTxt =="error"){alert("error : " + xhr.responseTxt)}
+    });
     // $.get('test.html', function(data){
     //     $('$result').html(data)
     // })

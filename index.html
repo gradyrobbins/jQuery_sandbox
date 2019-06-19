@@ -1,42 +1,81 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>jQuery Sandbox </title>
-  <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Sandbox </title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
 
-</head>
+  <header>
+    <h1>jQuery Sandbox</h1>
+    <h3>Selectors</h3>
+    <h3>Events</h3>
+    <h3>DOM manipulation</h3>
+    <h3>Effects/Animation</h3>
+    <h3>AJAX | Practice - song list</h3>
+  </header>
 
-<header>
-  <h1>jQuery Sandbox</h1>
-  <h3>Selectors</h3>
-  <h3>Events</h3>
-  <h3>Dom manipulation</h3>
-  <h3>Effects/Animation</h3>
-  <h3>AJAX</h3>
-</header>
+  <body>
+    <div id="Selectors">
+      <h3>Selectors</h3>
+      <button id="btn1">toggle hide/show</button>
+      <button id="btn2">btn2</button>
+      <p class="para1">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
 
-<body>
-  <div id="display-container">Load Artists
-    <button id="load-songs">click to load</button>
-    <!-- <button id="empty">clear this list</button> -->
+    </div>
+    <hr/>
+    <div id="events">
+      <h3>mouse events</h3>
+      <h2 id="coords"></h2>
+    </div>
 
-    <ol id="song-list"></ol>
+
+<hr/>
+  <div id="DOM_Manipulation">
+      <div id="Ch3">
+          <h3>DOM manipulation</h3>
+          <button id="btn5">Button</button>
+          <p id="paragraph5">This is a paragraph</p>
+          <p id="paragraph6">This is another paragraph</p>
+          <div id="myDiv"></div>
+        </div>
   </div>
+<hr/>
+
+  <div id="Effects/Animation">
+    <div id="ch4">
+        <button id="btnFadeOut">Fade out</button>
+        <button id="btnFadeIn">Fade in</button>
+        <!-- <button id="btnFadeTog">Fade tog</button> -->
+        <!-- <hr/> -->
+        <button id="btnSlideUp">Slide Up</button>
+        <button id="btnSlideDown">Slide Down </button>
+        <button id="btnSlideTog">Slide  tog</button>
+
+        <div id="box"><h2>Hello World </h2></div>
+        <hr/>
+        <button id="btnMoveLeft">move Left</button>
+        <button id="btnMoveRight">move Right </button>
+        <button id="btnMoveAround">move  Around</button>
+
+        <hr>
+        <div id="box2"><h2>Hello World </h2></div>
+      </div>
+    </div>
+<hr/>
   <div id="AJAX">
-    <div id="result"></div>
-    <ul id="users"></ul>
-  </div>
-  <hr/>
-  <hr/>
 
-  <div id="events">
-    <h3>mouse events</h3>
-    <button id="btn1">toggle hide/show</button>
-    <button id="btn2">alert</button>
-    <p class="para1">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
-    <h2 id="coords"></h2>
+    <div id="result"></div>
+          <div id="display-container">Load Artists from an external JSON file (songs.json)
+            <button id="load-songs">click to load</button>
+            <ol id="song-list"></ol>
+          </div>
+
   </div>
+    <hr/>
+  <div id="practice"></div>
+    <hr/>
+
   <hr/>
   <div id="forms">
     <h3>Forms</h3>
@@ -59,35 +98,7 @@
     </form>
   </div>
   <hr/>
-  <div id="Ch3">
-    <h3>AJAX | DOM manipulation</h3>
-    <button id="btn5">Button</button>
-    <p id="paragraph5">This is a paragraph</p>
-    <p id="paragraph6">This is another paragraph</p>
-    <div id="myDiv"></div>
-  </div>
-    <hr/>
 
-<div id="ch4">
-  <button id="btnFadeOut">Fade out</button>
-  <button id="btnFadeIn">Fade in</button>
-  <button id="btnFadeTog">Fade tog</button>
-  <hr/>
-  <button id="btnSlideUp">Slide Up</button>
-  <button id="btnSlideDown">Slide Down </button>
-  <button id="btnSlideTog">Slide  tog</button>
-
-  <hr/>
-  <button id="btnMoveLeft">move Left</button>
-  <button id="btnMoveRight">move Right </button>
-  <button id="btnMoveAround">move  Around</button>
-
-  <div id="box"><h2>Hello World </h2></div>
-  <hr>
-  <div id="box2"><h2>Hello World </h2></div>
-</div>
-
-  <hr/>
 
   <!-- import jQuery CDN -->
   <script
